@@ -1,0 +1,6 @@
+$theme-primary-color: #00b6cd;
+
+:root {
+  --primary-color: #{$theme-primary-color};
+  --primary-hover-color: #{darken($theme-primary-color, 10%)};
+}

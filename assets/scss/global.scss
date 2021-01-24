@@ -1,0 +1,79 @@
+@import "./fonts";
+@import "./variables";
+
+.nuxt-link-exact-active {
+  color: var(--primary-color);
+  font-weight: 500;
+
+  &:hover {
+    color: var(--primary-color);
+  }
+}
+
+.nuxt-content-container {
+  height: 100%;
+}
+
+.nuxt-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  h1,
+  h2 {
+    margin-right: auto;
+    &::after {
+      content: " ";
+      width: 30%;
+      display: block;
+      border-width: 2px;
+      border-color: var(--primary-color);
+      margin-bottom: 0.25rem;
+      border-radius: 0.25rem;
+    }
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+  }
+
+  ul,
+  ol {
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  ul > li {
+    list-style-type: disc;
+  }
+
+  ol > li {
+    list-style-type: nav;
+  }
+
+  a {
+    color: var(--primary-color);
+
+    &:hover {
+      color: var(--primary-hover-color);
+    }
+  }
+
+  pre[class*="language-"] {
+    background-color: #4a5568;
+    border-radius: 5px;
+    color: white;
+    text-shadow: none;
+    font-size: 14px;
+  }
+}
